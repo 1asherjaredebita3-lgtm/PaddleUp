@@ -1,0 +1,6 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Pickleball Live Board</title><link rel="stylesheet" href="/styles.css"></head>
+<body class="tv"><main><header><div><div class="label">Live court board</div><h1>Play. Rotate. Repeat.</h1></div><div><div id="connection" role="status">Connecting…</div><div id="clock" class="muted"></div></div></header>
+<p id="pause" class="danger"></p><section id="courts" class="grid" aria-label="Court status"></section>
+<section class="card"><h2>Waiting parties</h2><div id="queue"></div></section>
+<footer class="muted">Stay nearby when you are on deck. Wait times are estimates. Challenge court waits vary.</footer></main>
+<script src="/socket.io/socket.io.js"></script><script src="/board.js"></script></body></html>

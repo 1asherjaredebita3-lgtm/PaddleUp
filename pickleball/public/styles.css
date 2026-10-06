@@ -1,0 +1,18 @@
+/* EDIT BRAND COLORS HERE: every view uses these variables. */
+:root { --bg:#0c1721; --panel:#182936; --text:#f4f8fa; --muted:#b6c9d7; --accent:#c4f264; --danger:#ffac99; }
+* { box-sizing:border-box; } body { margin:0; background:var(--bg); color:var(--text); font:18px/1.5 system-ui,sans-serif; }
+main { max-width:1600px; margin:auto; padding:clamp(20px,3vw,64px); }
+header,.row { display:flex; justify-content:space-between; gap:20px; align-items:center; flex-wrap:wrap; }
+h1 { margin:0; font-size:clamp(32px,4vw,64px); } h2 { margin:0 0 12px; } a { color:var(--accent); }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr)); gap:24px; margin:24px 0; }
+.card { padding:24px; background:var(--panel); border-radius:16px; border:1px solid #ffffff20; }
+.label { color:var(--accent); text-transform:uppercase; font-weight:700; letter-spacing:.08em; }
+.players { font-size:clamp(24px,2vw,40px); font-weight:700; }
+.muted { color:var(--muted); } .danger { color:var(--danger); }
+input,select,button { font:inherit; padding:12px; border-radius:8px; max-width:100%; }
+input,select { background:#fff; color:#14232d; border:0; } button { background:var(--accent); color:#14232d; border:0; cursor:pointer; font-weight:700; }
+button:disabled { opacity:.5; cursor:wait; } label { display:grid; gap:6px; margin:12px 0; }
+.small { font-size:16px; } #message { white-space:pre-wrap; } .queue-row { border-top:1px solid #ffffff20; padding:12px 0; }
+/* TV blueprint: court cards auto-fit in a grid; card headers and main header use Flexbox.
+   Set browser zoom/fullscreen for viewing distance. Vertical overflow scrolls for many courts. */
+body.tv .card { min-height:280px; } body.tv footer { font-size:20px; }

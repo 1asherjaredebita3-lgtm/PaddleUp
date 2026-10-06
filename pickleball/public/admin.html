@@ -1,0 +1,6 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Court Admin</title><link rel="stylesheet" href="/styles.css"></head><body><main>
+<header><h1>Court operations</h1><a href="/tv.html">Live board</a></header>
+<label>Admin token<input id="token" type="password" autocomplete="off"></label><p class="small muted">Token stays in this page's memory. Use HTTPS. A production staff login can replace this starter credential.</p>
+<button id="pause">Pause queue</button> <button id="resume">Resume queue</button>
+<div id="courts" class="grid"></div><section class="card"><h2>Waiting parties</h2><div id="queue"></div></section><p id="message" role="status"></p>
+</main><script src="/socket.io/socket.io.js"></script><script src="/admin.js"></script></body></html>
